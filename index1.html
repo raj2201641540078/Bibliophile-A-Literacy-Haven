@@ -1,0 +1,4931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Bibliophile</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-book-3-line"></i>Bibliophile
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">
+                <i class="ri-book-3-line"></i>
+                <span>Featured</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#discount" class="nav__link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>Discount</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#new" class="nav__link">
+                <i class="ri-bookmark-line"></i>
+                <span>New Books</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#testimonial" class="nav__link">
+                <i class="ri-message-3-fill"></i>
+                <span>Testimonial</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          <!-- search button -->
+          <i class="ri-search-line search-button" id="search-button"></i>
+
+          <!-- login button -->
+
+          <i class="ri-user-line login-button" id="login-button"></i>
+
+          <!-- theme button -->
+
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search-content">
+      <form action="" class="search__form">
+        <i class="ri-search-line search__icon"></i>
+        <input
+          type="search"
+          placeholder="What are you looking for?"
+          class="search__input"
+        />
+      </form>
+
+      <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login grid" id="login-content">
+      <form action="" class="login__form grid">
+        <h3 class="login__title">Log In</h3>
+
+        <div class="login__group grid">
+          <div>
+            <label for="login-email" class="login__label">Email</label>
+            <input
+              type="email"
+              placeholder="Write your email"
+              id="login-email"
+              class="login__input"
+            />
+          </div>
+
+          <div>
+            <label for="login-pass" class="login__label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="login-pass"
+              class="login__input"
+            />
+          </div>
+        </div>
+
+        <div>
+          <span class="login__signup">
+            You do not have an account? <a href="#">Sign up</a>
+          </span>
+
+          <a href="#" class="login__forgot"> You forgot your password </a>
+
+          <button type="submit" class="login__button button">Log In</button>
+        </div>
+      </form>
+
+      <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!-- <div style="margin-left: 10rem">
+      <img src="assets/img/86_inr.jpg" alt="" />
+    </div> -->
+
+    <!-- <div style="margin-left: 10rem;">
+      <img src="assets/img/Screenshot 2023-12-31 185032.png" alt="">
+    </div> -->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Browse & <br />
+              Select B-Books
+            </h1>
+
+            <p class="home__description">
+              Find the best B-books from your favorite writers, explore hundreds
+              of books with all possible categories, take advantage of the 50%
+              discount and much more.
+            </p>
+
+            <a href="#" class="button">Explore Now</a>
+          </div>
+
+          <div class="home__images">
+            <div class="home__swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/home-book-1.png"
+                    alt="image"
+                    class="home__img"
+                  />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/home-book-2.png"
+                    alt="image"
+                    class="home__img"
+                  />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/home-book-3.png"
+                    alt="image"
+                    class="home__img"
+                  />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/home-book-4.png"
+                    alt="image"
+                    class="home__img"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SERVICES ====================  -->
+      <section class="services section">
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="ri-truck-line"></i>
+            <h3 class="services__title">Free Shipping</h3>
+            <p class="services__description">Order More Than $100</p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-lock-line"></i>
+            <h3 class="services__title">Secure Payment</h3>
+            <p class="services__description">100% Secure Payment</p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-customer-service-2-line"></i>
+            <h3 class="services__title">24/7 Support</h3>
+            <p class="services__description">Call us anytime</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- <div style="margin-left: 10rem; margin-top: 10rem">
+        <img src="assets/img/2_CuratedWeb3012.jpg" alt="img" />
+     </div> -->
+
+      <div class="gallary" id="Gallary">
+        <h1 style="margin-bottom: 65px">Browse Genres<span></span></h1>
+
+        <div class="gallary_image_box">
+          <div class="gallary_image">
+            <img src="assets/img/genre-11.webp" />
+            <h3>Non-Fiction</h3>
+            <p>
+              A nonfiction book is one based on true events and as factually
+              correct as possible.
+            </p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+
+          <div class="gallary_image">
+            <img src="assets/img/genre-4.webp" />
+            <h3>Biographies & History</h3>
+            <p>
+              A biography is simply the story of a person's life. <br />
+              And a history books contains the factual inforamtion about the
+              past.
+            </p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+
+          <div class="gallary_image">
+            <img src="assets/img/genre-8.webp" />
+            <h3>Historical Fiction</h3>
+            <p>
+              Historical Fiction is set in a real place, during a culturally
+              recognizable time.
+            </p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+
+          <div class="gallary_image">
+            <img src="assets/img/genre-1.webp" />
+            <h3>Romance</h3>
+            <p>
+              A Romance book follows the romantic story of two protagonists,
+              with a Happily-Ever-After ending.
+            </p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+
+          <div class="gallary_image">
+            <img src="assets/img/genre-5.webp" />
+            <h3>Children's</h3>
+            <p>Books inform our imaginations, inspiring creativity.</p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+
+          <div class="gallary_image">
+            <img src="assets/img/genre-9.webp" />
+            <h3>Horror</h3>
+            <p>
+              Horror novels can be scary, thrilling, or grotesque. These books
+              include Stephen King classics and new releases.
+            </p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+
+          <div class="gallary_image">
+            <img src="assets/img/genre-7 (1).webp" />
+            <h3>Fantasy</h3>
+            <p>
+              Fantasy, from the Greek ϕαντασία meaning 'making visible,'is a
+              genre of fiction that concentrates on imaginary elements (the
+              fantastic).
+            </p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+
+          <div class="gallary_image">
+            <img src="assets/img/genre-3.webp" />
+            <h3>Mystrey & Thriller</h3>
+            <p>
+              Mystery-thrillers are stories with twists and turns that keep you
+              on your toes guessing about the truth, the POV's truth, and about
+              what will happen next.
+            </p>
+            <a href="#" class="gallary_btn">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div style="margin: top 40px; margin-left: 10rem">
+        <img src="assets/img/85_inr.jpg" alt="" />
+      </div> -->
+      <!-- 
+      <div style="margin-left: 10rem; margin-top: 25px">
+        <img src="assets/img/Screenshot 2023-12-31 185032.png" alt="" />
+      </div> -->
+
+      <!--==================== FEATURED ==================== -->
+      <section class="featured section" id="featured">
+        <h2 class="section__title">Our Library</h2>
+
+        <div class="featured__container container">
+          <h1
+            style="
+              margin-top: 30px;
+              margin-bottom: 30px;
+              font-weight: 500;
+              font-size: 30px;
+              text-decoration: underline;
+            "
+          >
+            Spiritual Books
+          </h1>
+
+          <div style="margin-bottom: 40px">
+            <img src="assets/img/Screenshot 2023-12-31 183854.png" alt="" />
+          </div>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/bhagavad-gita-9781647226787_hr.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Bhagavad Gita</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexgita.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/sampoorna-ramayana-in-english-paperback-1000x1000.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Ramayana</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexRamyana.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/vedas.jpg.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Rigvedas</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexringveda.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/upanishads.jpg.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Upanishads</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexupanishadas.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/sunderkand.jpg.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Sunderkand</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/2015.343716.Ramcharit-Manas.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/manusmriti.jpg.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Manusmriti</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/2015.343716.Ramcharit-Manas.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/autobiography-yogi.jpg.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Autobiography of a Yogi</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/the-autobiography-of-yogi.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/mahabharat-hindi-by-vedvyas.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Mahabharata-VOL-1.pdf">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/meluha.jpg.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Immortals of Meluha</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/The-Immortals-of-Meluha (1).pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/sanyasi-jisne-apni-sampati-bech-di-by-robin-sharma.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Monk</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/The Monk Who Sold His Ferrari (Hindi).pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <!-- ram -->
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-1</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexmahabharat 1.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (2).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-2</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexmahabharat 2.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (3).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-3</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexmahabharat 3.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (4).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-4</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="indexmahabharat 4.html">Read</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (5).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-5</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Mahabharata-VOL-6.pdf">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (6).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-6</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Mahabharata-VOL-7.pdf">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (7).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-7</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Mahabharata-VOL-8.pdf">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (8).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-8</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Mahabharata-VOL-9.pdf">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (9).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-9</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Mahabharata-VOL-10.pdf">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (10).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharat-VOL-10</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Mahabharata-VOL-11.pdf">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <!-- new -->
+
+          <h1
+            style="
+              margin-top: 15px;
+              margin-bottom: 30px;
+              font-weight: 500;
+              font-size: 30px;
+              text-decoration: underline;
+            "
+          >
+            Books We Love
+          </h1>
+
+          <div style="margin-bottom: 4rem">
+            <img src="assets/img/MedicalWeb.jpg" alt="img" />
+          </div>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/0012009823-M.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Controls your mind</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button"><a href="#">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/7ec876eb-cec3-4524-b16b-a88d4e602d50.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Haunting Adeline</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Haunting Adeline.epub">Explore</a>
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/2895323-M.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Battle Of The Strong</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/battleofstrongro00parkiala.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/758266a7-2426-4b1e-b137-46c7025bd753.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Rich Dad Poor Dad</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a href="assets/book pdf/Rich-Dad-Poor-Dad (2).pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/5e30e7e7-476f-40f2-b3e4-b20fbcafcfe2.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Can't Hurt Me:</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/Cant Hurt Me_ Master Your Mind and Defy the Odds.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/79d24ae3-bc68-4d45-97fa-0bb6ff7483e3.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mind Management</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Add To Cart</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-7.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button">Add To Cart</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/51afeKdygtL.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Legend Is Born</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-9.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-10 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <!-- photo -->
+
+          <!-- 
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-1</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-2.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (2).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-2</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-3.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (3).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-3</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-4.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (4).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-4</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-5.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (5).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-5</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-6.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (6).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-6</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-7.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (7).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-7</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-8.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (8).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-8</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-9.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (9).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-9</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-10.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (10).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Mahabharata-VOL-10</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">$11.99</span>
+                  <span class="featured__price">$19.99</span>
+                </div>
+
+                <button class="button"><a href="assets/book pdf/Mahabharata-VOL-11.pdf">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div> -->
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/harry-potter-and-the-sorcerer-s-stone-the-first-book-in-the-phenomenal-internationally-bestselling-harry-potter-series-by-j-k-rowling-1022x1536.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  Harry Potter ,the Sorcerer's Stone
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/Harry Potter and The Sorcerer’s Stone.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (18).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  Harry Potter, the Chamber of Secrets
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/Harry Potter and The Chamber of Secrets.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/2mKjlNF8PUBihENBlBu7IGEvfNn.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  Harry Potter ,the Prisoner of Azkaban
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/HARRY POTTER AND THE PRISONER OF AZKABAN (1).pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/qckFxTuHkdMGDK2sQlmfgHteLpC.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Harry Potter,the Goblet of Fire</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/4-Harry-Potter-and-the-Goblet-of-Fire_US_ISBN-0-439-13959-7_2014-191-1447.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/tIf9aUyNljda9MG1pjlOLHCZ3b0.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  Harry Potter the Order of the Phoenix
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/5_-_harry_potter_and_the_order_of_the_phoenix_chapter_37.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/th (19).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  Harry Potter the Half-Blood Prince
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/5_-_harry_potter_and_the_order_of_the_phoenix_chapter_37.pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  Harry Potter the Deathly Hallows
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Available</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">
+                  <a
+                    href="assets/book pdf/Harry Potter and The Half-Blood Prince (1).pdf"
+                    >Explore</a
+                  >
+                </button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/914CT7iyyvL.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Harry Potter Story</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button"><a href="#">Explore</a></button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-9.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Add To Cart</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-10 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Add To Cart</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <h1
+            style="
+              margin-top: 15px;
+              margin-bottom: 30px;
+              font-weight: 500;
+              font-size: 30px;
+              text-decoration: underline;
+            "
+          >
+            Nonfiction Books("contain factual information")
+          </h1>
+
+          <div style="margin-bottom: 4rem">
+            <img src="assets/img/84_inr.jpg" alt="" />
+          </div>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/917WPlEp6ML._AC_UL480_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Hills are Burning</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/61VAtRuPgYL._AC_UL480_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">THE POWER OF YOUR SUBCONSCIOUS</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/81Uig65WakL._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Brain</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/61jBLw5Bq9L._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  The Power of Your Subconscious Mind
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/71g5lgi3tKL._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">IGNITED MINDS</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/71XpkRq0ncL._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Think Straight</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/61B84NiWabL._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Think And Grow Rich.</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/81beaZVtFML._AC_UY327_FMwebp_QL65_ (1).webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Three Thousand Stitches</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/814DJT4lL9S._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Everyday Ayurveda</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/81HP7-DUQKL._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Wise and Otherwise</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <!-- 1111111111 -->
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/712UNxm026L._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Relativity:</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/81fcLJo+FNL._AC_UY327_FMwebp_QL65_ (1).webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">1984</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/71+n2VSAiXS._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Time Machine</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/81KDmsPWVlS._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  The Complete Novels of Sherlock Holmes
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/61tVw-EYRGL._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Read People Like a Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/71QKQ9mwV7L._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">
+                  The Subtle Art of Not Giving a F*ck
+                </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/815tOaVXmHL._AC_UY327_FMwebp_QL65_.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Everyday Hero Manifeto</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-8.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Thousands Names</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-9.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-10 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <h1
+            style="
+              margin-top: 15px;
+              margin-bottom: 30px;
+              font-weight: 500;
+              font-size: 30px;
+              text-decoration: underline;
+            "
+          >
+            Fiction Books.
+          </h1>
+
+          <div style="margin-left: 0.5rem; margin-bottom: 50px">
+            <img src="assets/img/Screenshot 2023-12-31 181504.png" alt="" />
+          </div>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/41Mb2mAhklL._SY445_SX342_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Loving The Workout</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/51BWlPvGsHL.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Making Of A Matchmaker</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/61UigRw8j4L._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Uncovering</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/8157SgW4qjL._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">War Of The Animals</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/7184hFAmqPL._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Dirt Dealers</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/81AM3aXjgQL._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Whiskey Witch</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/81qQcX8jhlS._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Lady Tanglewood</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/81yLAj-dOjL._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Billionaire</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/91qRbebr-zL._SL1500_ (1).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Trial Sorgbry</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/A1HwyYcs8uL._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Oliva Mauring</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/cover-59297.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Strangers</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/cover-61217.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Science Fiction</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/cover-cust-2262.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Crime & Punishment</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/cover-cust-5719.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Works Of Edgar Allah </h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/Screenshot 2023-09-12 at 11.webp"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Haunted By The Past</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/th (26).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Kite Runner</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/th (27).jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Thief</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/61UigRw8j4L._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Rene Wenb</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/51BWlPvGsHL.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">The Making Of The Matchmaker</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img2/81qQcX8jhlS._SL1500_.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Lady Tanglewood</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <h1
+            style="
+              margin-top: 15px;
+              margin-bottom: 30px;
+              font-weight: 500;
+              font-size: 30px;
+              text-decoration: underline;
+            "
+          >
+            Thrillers Books.
+          </h1>
+
+          <div>
+            <img
+              style="margin-bottom: 45px"
+              src="assets/img/Screenshot 2023-12-31 183854.png"
+              alt=""
+            />
+          </div>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-1 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-2 (2).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-3 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-5.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-6.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-7.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-8.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-9.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-10 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-1 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-2 (2).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-3 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-5.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-6.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-7.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-8.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-9.png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+
+              <article class="featured__card swiper-slide">
+                <img
+                  src="assets/img/book-10 (1).png"
+                  alt="image"
+                  class="featured__img"
+                />
+
+                <h2 class="featured__title">Featured Book</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Unavailable</span>
+                  <span class="featured__price"></span>
+                </div>
+
+                <button class="button">Borrow</button>
+
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-drop-left-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+
+          <!-- new -->
+        </div>
+      </section>
+
+      <!-- 
+      <div>
+        <img src="assets/img/Screenshot 2024-01-01 185931.png" alt="">
+      </div> -->
+
+      <!--==================== DISCOUNT ====================-->
+      <section class="discount section" id="discount">
+        <div class="discount__container container grid">
+          <div class="discount__data">
+            <h2 class="discount__title section__title">Up To 50% Discount</h2>
+
+            <p class="discount__description">
+              Take advantage of the discount days we have for you, buy books
+              from your favorite writers, the more you buy, the more discounts
+              we have for you.
+            </p>
+
+            <a href="#" class="button">Shop Now</a>
+          </div>
+
+          <div class="discount__images">
+            <img
+              src="assets/img/bhagavad-gita-9781647226787_hr.jpg"
+              alt="image"
+              class="discount__img-1"
+            />
+            <img
+              src="assets/img/sampoorna-ramayana-in-english-paperback-1000x1000.webp"
+              alt="image"
+              class="discount__img-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== NEW BOOKS ====================-->
+
+      <section class="new section" id="new">
+        <h2 class="section__title">New Books</h2>
+
+        <div style="margin-left: 10rem">
+          <img src="assets/img/Screenshot 2023-12-31 174310 (1).png" alt="" />
+        </div>
+
+        <div class="new__container container">
+          <div class="new__swiper swiper">
+            <div class="swiper-wrapper">
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-1 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">The Lord's of the king</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$11.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-2 (2).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Simple & Minimalist</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$12.99</span>
+                    <span class="new__price">$18.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-3 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Muted Or Poster</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$8.99</span>
+                    <span class="new__price">$16.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-5.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-6.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-7.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-8.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-9.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-10 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="new__swiper swiper">
+            <div class="swiper-wrapper">
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Pauring Dreams</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$11.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <!-- +++++++ -->
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-5.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">Your autuman clothes</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$20.99</span>
+                    <span class="new__price">$28.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-6.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">Designed for work</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$16.99</span>
+                    <span class="new__price">$19.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-7.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-6.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-5.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-3 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-2 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-1 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">jai shreee</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- new -->
+
+          <div class="new__swiper swiper">
+            <div class="swiper-wrapper">
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-8.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">Modern Abstruct Poaster</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$21.99</span>
+                    <span class="new__price">$28.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-7.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">Plant tree for the future</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$16.99</span>
+                    <span class="new__price">$23.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/Lynwood 164x250.jpg"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Lynwood</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$6.99</span>
+                    <span class="new__price">$9.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-7.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-6.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-5.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-3 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-2 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-1 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="new__swiper swiper">
+            <div class="swiper-wrapper">
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/Ellipsis 159x250.jpg"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Ellipsis</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$22.99</span>
+                    <span class="new__price">$24.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/Further Exploits of Sherlock Holmes 161x250.jpg"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">
+                    Further Exploits of Sherlock Holmes
+                  </h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$36.99</span>
+                    <span class="new__price">$54.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/Sicilian Woman 161x250.jpg"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Sicilian Woman</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$13.99</span>
+                    <span class="new__price">$19.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-7.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-6.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-5.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-3 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-2 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-1 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="new__swiper swiper">
+            <div class="swiper-wrapper">
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-10 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Memories of the Sword</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$28.99</span>
+                    <span class="new__price">$36.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-9.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">Bird park</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$13.99</span>
+                    <span class="new__price">$17.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/Rathe 1 167x250.jpg"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">Arthashatra</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$14.99</span>
+                    <span class="new__price">$19.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-7.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-6.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img src="assets/img/book-5.png" alt="image" class="new__img" />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-4 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-3 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-2 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="new__card swiper-slide">
+                <img
+                  src="assets/img/book-1 (1).png"
+                  alt="image"
+                  class="new__img"
+                />
+
+                <div>
+                  <h2 class="new__title">New Book</h2>
+                  <div class="new__prices">
+                    <span class="new__discount">$7.99</span>
+                    <span class="new__price">$14.99</span>
+                  </div>
+
+                  <div class="new__stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== JOIN ====================-->
+      <section class="join section">
+        <div class="join__container">
+          <img src="assets/img/join-bg.jpg" alt="image" class="join__bg" />
+
+          <div class="join__data container grid">
+            <h2 class="join__title section__title">
+              Subscribe To Receive <br />
+              The Latest Updates
+            </h2>
+
+            <form action="" class="join__form">
+              <input
+                type="email"
+                placeholder="Enter email"
+                class="join__input"
+              />
+              <button type="submit" class="join__button button">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div style="margin-left: 10rem">
+        <img src="assets/img/Screenshot 2023-12-31 190636.png" alt="" />
+      </div> -->
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section" id="testimonial">
+        <h2 class="section__title">Customer Opinions</h2>
+
+        <div class="testimonial__container container">
+          <div class="testimonial__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/testimonial-perfil-1.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Rial Loz</h2>
+                <p class="testimonial__description">
+                  The best website to buy books, the purchase is very easy to
+                  make and has great discounts.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/testimonial-perfil-2.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Madison Finch</h2>
+                <p class="testimonial__description">
+                  The line, embedded unceremoniously in the middle of a
+                  page-long paragraph, doubles, like so many others in
+                  “Asymmetry,” as literary criticism.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/testimonial-perfil-3.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Perry Calton</h2>
+                <p class="testimonial__description">
+                  I read Fahrenheit 451 over ten years ago in my early teens. At
+                  the time, I remember really wanting to read 1984, although I
+                  never managed to get my hands on it
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/testimonial-perfil-4.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Marnus Labschuamge</h2>
+                <p class="testimonial__description">
+                  This website helps to promating the reading activaties among
+                  the people who is interseted to reading.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+
+                  <i class="ri-star-fill"></i>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 222 -->
+
+          <div class="testimonial__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/review_1.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Carry Maxwell</h2>
+                <p class="testimonial__description">
+                  An exciting début from a new young writer with a dark
+                  imagination. Thomas Brown's beautifully written novel proposes
+                  a modern gothic forest .
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/review_2.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">George Billaey</h2>
+                <p class="testimonial__description">
+                  The unthinkable is happening in Lynnwood a village with
+                  centuries of guilt on its conscience.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/review_3.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Henry Peter</h2>
+                <p class="testimonial__description">
+                  Since story is king in the world of fiction, it probably won't
+                  come as any surprise to learn that a book review.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/review_4.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Carter Field</h2>
+                <p class="testimonial__description">
+                  This is an ideal book for readers aged tweens and up; it is
+                  filled with mystery, action, adventure, thrills, spills and
+                  dire peril .
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+
+                  <i class="ri-star-half-line"></i>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="testimonial__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/testimonial-perfil-3.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Aayden Baiden</h2>
+                <p class="testimonial__description">
+                  The meat of this book is far more focused on the story of the
+                  Dark witch and her magically-gifted descendants living in
+                  Ireland.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/testimonial-perfil-2.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Josesa little</h2>
+                <p class="testimonial__description">
+                  All our e-books are sold to the global English-speaking
+                  market. We are proactive in using retailer promotions and
+                  targeted advertising.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/review_1.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Frak Aeldredus</h2>
+                <p class="testimonial__description">
+                  Our printed books are distributed by Lightning Source and
+                  partners in the UK, USA, Canada, Australia and many other
+                  countries.
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                </div>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="assets/img/testimonial-perfil-4.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+
+                <h2 class="testimonial__title">Christian Andrew</h2>
+                <p class="testimonial__description">
+                  This website is a work of literacy .. the pleasure is in the
+                  writing style
+                </p>
+
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+
+                  <i class="ri-star-half-line"></i>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 2222 -->
+        </div>
+      </section>
+    </main>
+
+    <!-- extraaaaa -->
+
+    <div style="margin-left: 30rem">
+      <img src="assets/img/Screenshot 2023-12-31 155501.png" alt="" />
+    </div>
+
+    <!-- extraaaaa -->
+
+    <!-- author -->
+
+    <div class="team">
+      <h1 style="margin-bottom: 100px; margin-top: 75px">
+        Some Author<span></span>
+      </h1>
+      <div style="margin-bottom: 10px" class="team_box">
+        <div class="profile">
+          <img
+            src="assets/img/MV5BMTg0MjI4NTM4N15BMl5BanBnXkFtZTcwNDk1Mzk5Mw@@._V1_UY209_CR10,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Kazuo Ishiguro</h2>
+            <p class="bio">
+              Kazuo Ishiguro was born on November 8, 1954 in Nagasaki, Japan.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BMTIzMDExOTU0M15BMl5BanBnXkFtZTcwNDc3MjIwMg@@._V1_UX140_CR0,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Salman Rushdie</h2>
+            <p class="bio">
+              Salman Rushdie dedicatee of his eighth novel, "Fury" (2001), on
+              17th April 2004.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BMDFlYWU5NTUtMDZkZC00MGY2LWI0MjctZjhlMWE2MWEyNGU3L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY209_CR104,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Haruki Murakami</h2>
+            <p class="bio">
+              Haruki Murakami graduated from Waseda University, Tokyo, in 1975.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BYTljNWQ3ZDQtYThhZi00YTY2LTk3ZTctOTQ1MDk0MzY5Njg2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY209_CR34,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">J.M. Coetzee</h2>
+            <p class="bio">
+              J.M. Coetzee was born on February 9, 1940 in Cape Town, South
+              Africa.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BMTg5NjE5NTI0NV5BMl5BanBnXkFtZTcwMDYwNDM5Ng@@._V1_UY209_CR116,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">José Saramago</h2>
+            <p class="bio">
+              José Saramago was born on November 16, 1922 in Azinhaga, Golega,
+              Portugal.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 10px" class="team">
+      <h1 style="margin-top: 5px"><span></span></h1>
+      <div style="margin-top: 1px" class="team_box">
+        <div class="profile">
+          <img
+            src="assets/img/MV5BNzExZTlmODgtZWRkNS00ODQwLWFjMGMtMDE2MDVmZmFjYmQ0XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY209_CR19,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Ursula K. Le Guin</h2>
+            <p class="bio">
+              Ursula K. Le Guin was born on October 21, 1929 in Berkeley,
+              California, USA.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BOTNkNjUzYzQtZGU3Ni00NWUzLThhMjYtYTA0YjMxM2YxYzJjXkEyXkFqcGdeQXVyMjIxMzMyMQ@@._V1_UY209_CR9,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Milan Kundera</h2>
+            <p class="bio">
+              Milan Kundera was born on April 1st 1929 in Brno, Czechoslovakia.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BNjU1MjA3NjI1Ml5BMl5BanBnXkFtZTgwNTQ3MjI2MTE@._V1_UY209_CR6,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Gabriel Márquez</h2>
+            <p class="bio">
+              Gabriel García Márquez was awarded the Nobel Prize for literature
+              in 1982.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BMTRiODRhODItOWUzZC00MTgxLThlNTYtMjMyYzg4OWIwZjViL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY209_CR8,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Johann von Goethe</h2>
+            <p class="bio">
+              Johann Wolfgang Goethe was born 1749 in Frankfurt am Main, Germany
+              as son of a lawyer.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="assets/img/MV5BMTczNjc1NjIzMV5BMl5BanBnXkFtZTYwNDU2MjYz._V1_UY209_CR0,0,140,209_AL_.jpg"
+          />
+          <div class="info">
+            <h2 class="name">Neil Gaiman</h2>
+            <p class="bio">
+              Neil Gaiman is an English author of short fiction, novels, comic
+              books, and films.
+            </p>
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <i class="ri-book-3-line"></i>B-Book
+          </a>
+
+          <p class="footer__description">
+            Find and explore the best <br />
+            B-Books from all your <br />
+            favorite writers.
+          </p>
+        </div>
+
+        <div class="footer__data grid">
+          <div>
+            <h3 class="footer__title">About</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link"> Awards</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link"> Privacy policy</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link"> Terms of services</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Company</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link"> Blogs</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link"> Community</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link"> Our team</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link"> Help center</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Contact</h3>
+
+            <ul class="footer__links">
+              <li>
+                <address class="footer__info">
+                  Av. Hacienda <br />
+                  Lima 4321, Perú
+                </address>
+              </li>
+
+              <li>
+                <address class="footer__info">
+                  b.book@email.com <br />
+                  0987-654-321 Lima 4321, Perú
+                </address>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Social</h3>
+
+            <div class="footer__social">
+              <a
+                href=" https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+
+              <a
+                href=" https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a
+                href=" https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-twitter-x-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="footer__copy">
+        &#169; All Rights Reserved By Bedimcode
+      </span>
+    </footer>
+
+    <!--==== SCROLL UP  ====-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
